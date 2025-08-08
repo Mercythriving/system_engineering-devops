@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Script that resists SIGTERM and keeps going
+
+# Trap SIGTERM and print "I am invincible!!!" instead of dying
+trap 'echo "I am invincible!!!"' SIGTERM
+
+# Infinite loop
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
